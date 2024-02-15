@@ -67,3 +67,12 @@ export const checkIfPangram = (str) => {
 export const checkVowels = (str) => {
   return str.toLowerCase().includes('a' && 'e' && 'i' && 'o' && 'u');
 };
+
+export const countBackwards = (num) => {
+  let countdown = [];
+  while (num >= 0) {
+    countdown.push(num);
+    num--;
+  }
+  return countdown.join(', ');
+};

@@ -4,6 +4,7 @@ import {
   countVowels,
   checkIfPangram,
   checkVowels,
+  countBackwards,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -20,3 +21,4 @@ console.log(
 );
 console.log('checkVowels -> Expected: true', checkVowels('Murcielago'));
 console.log('checkVowels -> Expected: false', checkVowels('Carrito'));
+console.log('countBackwards -> Expected: 23,22,21,20...0', countBackwards(23));
