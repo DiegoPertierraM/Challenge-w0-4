@@ -100,3 +100,22 @@ export const isOfAge = (age) => {
 export const throwDice = () => {
   return Math.trunc(Math.random() * 7);
 };
+
+export const playRPS = (play) => {
+  const options = ['rock', 'paper', 'scissors'];
+  const machineChoice = options[Math.trunc(Math.random() * options.length)];
+  console.log(machineChoice);
+
+  if (machineChoice === play.toLowerCase()) {
+    return 'Empate!';
+  }
+
+  if (
+    (machineChoice === 'rock' && play === 'paper') ||
+    (machineChoice === 'paper' && play === 'scissors') ||
+    (machineChoice === 'scissors' && play === 'rock')
+  ) {
+    return 'Enhorabuena! Has ganado.';
+  }
+  return 'Lo siento, has perdido :(';
+};

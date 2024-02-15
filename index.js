@@ -8,6 +8,8 @@ import {
   // calcAge,
   isOfAge,
   throwDice,
+  // checkIfLeapyear
+  playRPS,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -31,3 +33,5 @@ console.log('isOfAge -> Expected: false', isOfAge(12));
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
+// 10. checkIfLeapyear
+console.log('playRPS -> Expected: Win, loss or draw', playRPS('rock'));
