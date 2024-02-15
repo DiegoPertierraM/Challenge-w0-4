@@ -12,6 +12,7 @@ import {
   playRPS,
   giveRandomUsername,
   calcTip,
+  calcDiscount,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -47,4 +48,8 @@ console.log(
 console.log(
   'calcTip -> Expected: Bill, Amount of tip and Total cost',
   calcTip(201.45, 0.2)
+);
+console.log(
+  'calcDiscount -> Expected: Price, Discount and Total price',
+  calcDiscount(124.5, 0.7)
 );

@@ -130,7 +130,15 @@ export const giveRandomUsername = (names, surnames) => {
 export const calcTip = (bill, percentage) => {
   const totalCost = bill + bill * percentage;
   return `
-  Bill: ${bill.toFixed(2)} 
-  Tip: ${percentage * 100}% 
-  Cost: ${totalCost.toFixed(2)}`;
+  Cuenta: ${bill.toFixed(2)} 
+  Propina: ${percentage * 100}% 
+  Precio: ${totalCost.toFixed(2)}`;
+};
+
+export const calcDiscount = (price, discount) => {
+  const totalCost = price - price * discount;
+  return `
+  Precio: ${price.toFixed(2)} 
+  Descuento: ${discount * 100}% 
+  Precio con descuento: ${totalCost.toFixed(2)}`;
 };
