@@ -10,6 +10,7 @@ import {
   throwDice,
   // checkIfLeapyear
   playRPS,
+  giveRandomUsername,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -35,3 +36,10 @@ console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
 // 10. checkIfLeapyear
 console.log('playRPS -> Expected: Win, loss or draw', playRPS('rock'));
+console.log(
+  'giveRandomeUsername -> Expected: Random username',
+  giveRandomUsername(
+    ['Pedro', 'Manolo', 'Lucía', 'Silvia'],
+    ['García', 'Rodríguez', 'Pérez', 'Herrero']
+  )
+);

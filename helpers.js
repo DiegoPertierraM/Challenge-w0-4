@@ -119,3 +119,10 @@ export const playRPS = (play) => {
   }
   return 'Lo siento, has perdido :(';
 };
+
+export const giveRandomUsername = (names, surnames) => {
+  const name = names[Math.trunc(Math.random() * names.length)];
+  const surname = surnames[Math.trunc(Math.random() * surnames.length)];
+  const num = Math.trunc(Math.random() * 101);
+  return `${name} ${surname} ${num}`;
+};
