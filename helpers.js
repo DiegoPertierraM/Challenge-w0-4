@@ -63,3 +63,7 @@ export const checkIfPangram = (str) => {
     ? 'True'
     : 'False';
 };
+
+export const checkVowels = (str) => {
+  return str.toLowerCase().includes('a' && 'e' && 'i' && 'o' && 'u');
+};
