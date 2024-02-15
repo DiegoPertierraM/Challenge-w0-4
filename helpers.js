@@ -1,6 +1,10 @@
+// 1
+
 export const cutString = (str) => {
   return str.slice(1, str.length - 1);
 };
+
+// 2
 
 export const isPalindrome = (str) => {
   const middle = Math.trunc(str.length / 2);
@@ -11,6 +15,8 @@ export const isPalindrome = (str) => {
   }
   return false;
 };
+
+// 3
 
 export const countVowels = (str) => {
   let counter = 0;
@@ -27,6 +33,8 @@ export const countVowels = (str) => {
   }
   return counter;
 };
+
+// 4
 
 export const checkIfPangram = (str) => {
   return str
@@ -64,9 +72,13 @@ export const checkIfPangram = (str) => {
     : 'False';
 };
 
+// 5
+
 export const checkVowels = (str) => {
   return str.toLowerCase().includes('a' && 'e' && 'i' && 'o' && 'u');
 };
+
+// 6
 
 export const countBackwards = (num) => {
   let countdown = [];
@@ -77,29 +89,19 @@ export const countBackwards = (num) => {
   return countdown.join(', ');
 };
 
-// export const calcAge = (birthdate) => {
-//   const today = new Date();
-//   const birthDate = new Date(birthdate);
-//   let age = today.getFullYear() - birthDate.getFullYear();
-//   const monthDiff = today.getMonth() - birthDate.getMonth();
-
-//   if (
-//     monthDiff < 0 ||
-//     (monthDiff === 0 && today.getDate() < birthDate.getDate())
-//   ) {
-//     age--;
-//   }
-
-//   return age;
-// };
+// 8
 
 export const isOfAge = (age) => {
   return age > 18 ? true : false;
 };
 
+//9
+
 export const throwDice = () => {
   return Math.trunc(Math.random() * 7);
 };
+
+// 11
 
 export const playRPS = (play) => {
   const options = ['rock', 'paper', 'scissors'];
@@ -120,12 +122,16 @@ export const playRPS = (play) => {
   return 'Lo siento, has perdido :(';
 };
 
+// 12
+
 export const giveRandomUsername = (names, surnames) => {
   const name = names[Math.trunc(Math.random() * names.length)];
   const surname = surnames[Math.trunc(Math.random() * surnames.length)];
   const num = Math.trunc(Math.random() * 101);
   return `${name} ${surname} ${num}`;
 };
+
+// 13
 
 export const calcTip = (bill, percentage) => {
   const totalCost = bill + bill * percentage;
@@ -134,6 +140,8 @@ export const calcTip = (bill, percentage) => {
   Propina: ${percentage * 100}% 
   Precio: ${totalCost.toFixed(2)}`;
 };
+
+// 14
 
 export const calcDiscount = (price, discount) => {
   const totalCost = price - price * discount;
