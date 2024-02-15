@@ -11,6 +11,7 @@ import {
   // checkIfLeapyear
   playRPS,
   giveRandomUsername,
+  calcTip,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -42,4 +43,8 @@ console.log(
     ['Pedro', 'Manolo', 'Lucía', 'Silvia'],
     ['García', 'Rodríguez', 'Pérez', 'Herrero']
   )
+);
+console.log(
+  'calcTip -> Expected: Bill, Amount of tip and Total cost',
+  calcTip(201.45, 0.2)
 );

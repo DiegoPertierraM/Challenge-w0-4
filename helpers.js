@@ -126,3 +126,11 @@ export const giveRandomUsername = (names, surnames) => {
   const num = Math.trunc(Math.random() * 101);
   return `${name} ${surname} ${num}`;
 };
+
+export const calcTip = (bill, percentage) => {
+  const totalCost = bill + bill * percentage;
+  return `
+  Bill: ${bill.toFixed(2)} 
+  Tip: ${percentage * 100}% 
+  Cost: ${totalCost.toFixed(2)}`;
+};
