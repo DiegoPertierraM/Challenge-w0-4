@@ -96,3 +96,7 @@ export const countBackwards = (num) => {
 export const isOfAge = (age) => {
   return age > 18 ? true : false;
 };
+
+export const throwDice = () => {
+  return Math.trunc(Math.random() * 7);
+};

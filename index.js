@@ -7,6 +7,7 @@ import {
   countBackwards,
   // calcAge,
   isOfAge,
+  throwDice,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -27,3 +28,6 @@ console.log('countBackwards -> Expected: 23,22,21,20...0', countBackwards(23));
 // console.log('calcAge -> Expected: 26', calcAge('1998-01-08'));
 console.log('isOfAge -> Expected: true', isOfAge(26));
 console.log('isOfAge -> Expected: false', isOfAge(12));
+console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
+console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
+console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
