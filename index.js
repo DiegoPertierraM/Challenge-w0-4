@@ -1,3 +1,5 @@
-import { cutString } from './helpers.js';
+import { cutString, isPalindrome } from './helpers.js';
 
-console.log('Should return amell', cutString('Camello'));
+console.log('Expected: amell', cutString('Camello'));
+console.log('Expected: false', isPalindrome('murciélago'));
+console.log('Expected: true', isPalindrome('sometemos'));
