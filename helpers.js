@@ -76,10 +76,14 @@ export const calcAge = (day, month, year) => {
     bMonth: month,
     bYear: year,
   };
+  const age = actualDate.actYear - birthdate.bYear;
   if (actualDate.actMonth > birthdate.bMonth) {
-    return actualDate.actYear - birthdate.bYear;
+    return age;
   }
-  return actualDate.actYear - birthdate.bYear - 1;
+  if (actualDate.actDay > birthdate.bDay) {
+    return age;
+  }
+  return age - 1;
 };
 
 // 8
