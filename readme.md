@@ -18,7 +18,7 @@ Empezamos creando un proyecto y un repo de git /github para el mismo. Subimos el
 
 7. Escribe una función que reciba por parámetros el año de nacimiento, y calcule la edad de la persona.
 
-8. Crea una función que reciba la edad de una persona por parámetros y verifique si es mayor de edad. Imprime por consola un string con el resultado.
+8. Crea una función que reciba la fecha de nacimiento de una persona por parámetros y verifique si es mayor de edad. Imprime por consola un string con el resultado.
 
 9. Crea una función que simule el lanzamiento de un dado e imprime por consola el resultado cada vez que se ejecuta.
 
