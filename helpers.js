@@ -159,37 +159,3 @@ export const calcDiscount = (price, discount) => {
   Descuento: ${discount * 100}% 
   Precio con descuento: ${totalCost.toFixed(2)}`;
 };
-
-// return str
-//   .toLowerCase()
-//   .includes(
-//     'a' &&
-//       'b' &&
-//       'c' &&
-//       'd' &&
-//       'e' &&
-//       'f' &&
-//       'g' &&
-//       'h' &&
-//       'i' &&
-//       'j' &&
-//       'k' &&
-//       'l' &&
-//       'm' &&
-//       'n' &&
-//       'ñ' &&
-//       'o' &&
-//       'p' &&
-//       'q' &&
-//       'r' &&
-//       's' &&
-//       't' &&
-//       'u' &&
-//       'v' &&
-//       'w' &&
-//       'x' &&
-//       'y' &&
-//       'z'
-//   )
-//   ? 'True'
-//   : 'False';
