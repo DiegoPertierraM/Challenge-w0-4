@@ -97,7 +97,6 @@ export const calcAge = (day, month, year) => {
     actMonth: 2,
     actYear: 2024,
   };
-
   const birthdate = {
     bDay: day,
     bMonth: month,
@@ -127,11 +126,9 @@ export const playRPS = (play) => {
   const options = ['rock', 'paper', 'scissors'];
   const machineChoice = options[Math.trunc(Math.random() * options.length)];
   console.log(machineChoice);
-
   if (machineChoice === play.toLowerCase()) {
     return 'Empate!';
   }
-
   if (
     (machineChoice === 'rock' && play === 'paper') ||
     (machineChoice === 'paper' && play === 'scissors') ||
