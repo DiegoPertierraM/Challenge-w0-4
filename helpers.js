@@ -1,7 +1,7 @@
 // 1
 
 export const removeFirstAndLastChar = (str) => {
-  return str.slice(1, str.length - 1);
+  return str.slice(1, -1);
 };
 
 // 2
@@ -20,13 +20,14 @@ export const isPalindrome = (str) => {
 
 export const countVowels = (str) => {
   let counter = 0;
+  str = str.toLowerCase();
   for (let i = 0; i < str.length; i++) {
     if (
-      str[i].toLowerCase() === 'a' ||
-      str[i].toLowerCase() === 'e' ||
-      str[i].toLowerCase() === 'i' ||
-      str[i].toLowerCase() === 'o' ||
-      str[i].toLowerCase() === 'u'
+      str[i] === 'a' ||
+      str[i] === 'e' ||
+      str[i] === 'i' ||
+      str[i] === 'o' ||
+      str[i] === 'u'
     ) {
       counter++;
     }
