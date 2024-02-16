@@ -120,6 +120,20 @@ export const throwDice = () => {
   return Math.trunc(Math.random() * 7);
 };
 
+// 10
+
+export const checkIfLeapyear = (year) => {
+  if (year.toString().includes('00')) {
+    if (year % 400 === 0) {
+      return true;
+    }
+  }
+  if (year % 4 === 0) {
+    return true;
+  }
+  return false;
+};
+
 // 11
 
 export const playRPS = (play) => {

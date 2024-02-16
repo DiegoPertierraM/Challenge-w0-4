@@ -13,6 +13,7 @@ import {
   giveRandomUsername,
   calcTip,
   calcDiscount,
+  checkIfLeapyear,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -36,7 +37,10 @@ console.log('isOfAge -> Expected: false', isOfAge(12));
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());
-// 10. checkIfLeapyear
+console.log('checkIfLeapyear -> Expected: True', checkIfLeapyear(1900));
+console.log('checkIfLeapyear -> Expected: True', checkIfLeapyear(2000));
+console.log('checkIfLeapyear -> Expected: True', checkIfLeapyear(2024));
+console.log('checkIfLeapyear -> Expected: False', checkIfLeapyear(1999));
 console.log('playRPS -> Expected: Win, loss or draw', playRPS('rock'));
 console.log(
   'giveRandomeUsername -> Expected: Random username',
