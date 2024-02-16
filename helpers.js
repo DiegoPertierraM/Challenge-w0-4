@@ -1,6 +1,6 @@
 // 1
 
-export const cutString = (str) => {
+export const removeFirstAndLastChar = (str) => {
   return str.slice(1, str.length - 1);
 };
 
@@ -101,7 +101,10 @@ export const throwDice = () => {
 // 10
 
 export const checkIfLeapyear = (year) => {
-  if (year.toString().includes('00')) {
+  if (
+    year.toString().lastIndexOf('0') === 4 &&
+    year.toString().indexOf('0') === 3
+  ) {
     if (year % 400 === 0) {
       return true;
     }
