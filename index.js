@@ -8,12 +8,11 @@ import {
   calcAge,
   isOfAge,
   throwDice,
-  // checkIfLeapyear
+  checkIfLeapyear,
   playRPS,
   giveRandomUsername,
   calcTip,
   calcDiscount,
-  checkIfLeapyear,
 } from './helpers.js';
 
 console.log('cutString -> Expected: amell', cutString('Camello'));
@@ -22,7 +21,7 @@ console.log('isPalindrome -> Expected: true', isPalindrome('Sometemos'));
 console.log('countVowels -> Expected: 3', countVowels('Cabeza'));
 console.log(
   'checkIfPangram -> Expected: true',
-  checkIfPangram('El veloz murciélago hindú comía feliz cardillo y kiwi')
+  checkIfPangram('The quick brown fox jumps over the lazy dog')
 );
 console.log(
   'checkIfPangram -> Expected: false',

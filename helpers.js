@@ -37,39 +37,13 @@ export const countVowels = (str) => {
 // 4
 
 export const checkIfPangram = (str) => {
-  return str
-    .toLowerCase()
-    .includes(
-      'a' &&
-        'b' &&
-        'c' &&
-        'd' &&
-        'e' &&
-        'f' &&
-        'g' &&
-        'h' &&
-        'i' &&
-        'j' &&
-        'k' &&
-        'l' &&
-        'm' &&
-        'n' &&
-        'ñ' &&
-        'o' &&
-        'p' &&
-        'q' &&
-        'r' &&
-        's' &&
-        't' &&
-        'u' &&
-        'v' &&
-        'w' &&
-        'x' &&
-        'y' &&
-        'z'
-    )
-    ? 'True'
-    : 'False';
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  str = str.replace(/ +/g, '').toLowerCase().split('').sort();
+  str = str.filter((value, index) => str.indexOf(value) === index).join('');
+  if (alphabet === str) {
+    return true;
+  }
+  return false;
 };
 
 // 5
@@ -181,3 +155,37 @@ export const calcDiscount = (price, discount) => {
   Descuento: ${discount * 100}% 
   Precio con descuento: ${totalCost.toFixed(2)}`;
 };
+
+// return str
+//   .toLowerCase()
+//   .includes(
+//     'a' &&
+//       'b' &&
+//       'c' &&
+//       'd' &&
+//       'e' &&
+//       'f' &&
+//       'g' &&
+//       'h' &&
+//       'i' &&
+//       'j' &&
+//       'k' &&
+//       'l' &&
+//       'm' &&
+//       'n' &&
+//       'ñ' &&
+//       'o' &&
+//       'p' &&
+//       'q' &&
+//       'r' &&
+//       's' &&
+//       't' &&
+//       'u' &&
+//       'v' &&
+//       'w' &&
+//       'x' &&
+//       'y' &&
+//       'z'
+//   )
+//   ? 'True'
+//   : 'False';
