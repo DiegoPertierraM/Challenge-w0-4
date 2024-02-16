@@ -5,7 +5,7 @@ import {
   checkIfPangram,
   checkVowels,
   countBackwards,
-  // calcAge,
+  calcAge,
   isOfAge,
   throwDice,
   // checkIfLeapyear
@@ -30,7 +30,7 @@ console.log(
 console.log('checkVowels -> Expected: true', checkVowels('Murcielago'));
 console.log('checkVowels -> Expected: false', checkVowels('Carrito'));
 console.log('countBackwards -> Expected: 23,22,21,20...0', countBackwards(23));
-// console.log('calcAge -> Expected: 26', calcAge('1998-01-08'));
+console.log('calcAge -> Expected: 26', calcAge(9, 10, 1998));
 console.log('isOfAge -> Expected: true', isOfAge(26));
 console.log('isOfAge -> Expected: false', isOfAge(12));
 console.log('throwDice -> Expected: 1,2,3,4,5 or 6', throwDice());

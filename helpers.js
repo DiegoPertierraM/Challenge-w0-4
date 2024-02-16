@@ -89,6 +89,26 @@ export const countBackwards = (num) => {
   return countdown.join(', ');
 };
 
+// 7
+
+export const calcAge = (day, month, year) => {
+  const actualDate = {
+    actDay: 16,
+    actMonth: 2,
+    actYear: 2024,
+  };
+
+  const birthdate = {
+    bDay: day,
+    bMonth: month,
+    bYear: year,
+  };
+  if (actualDate.actMonth > birthdate.bMonth) {
+    return actualDate.actYear - birthdate.bYear;
+  }
+  return actualDate.actYear - birthdate.bYear - 1;
+};
+
 // 8
 
 export const isOfAge = (age) => {
